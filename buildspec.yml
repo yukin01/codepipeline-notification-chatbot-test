@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Nothing to do with install phase"
+  pre_build:
+    commands:
+      - echo "Nothing to do with pre_build phase"
+  build:
+    commands:
+      - echo $CODEBUILD_SOURCE_VERSION
+      - echo $CODEBUILD_RESOLVED_SOURCE_VERSION
+  post_build:
+    commands:
+      - echo "Nothing to do with post_build phase"
